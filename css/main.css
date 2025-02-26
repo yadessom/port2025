@@ -158,8 +158,3 @@
   .section-inner-wrap { width: 75%;}
   .page-02 .human, .page-04 .human { margin-bottom: 20%;}
 }
-@media (max-width: 1600px) {
-  body {
-    max-width: 90%;
-  }
-}
