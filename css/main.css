@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+.montserrat-<uniquifier> {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+/* Total */
+.sol { border: 1px solid red;}
+.flex-center { display: flex; justify-content: space-between; align-items: center; }
+.flex-vertical { display: flex; flex-direction: column; justify-content: space-between;}
+
+/* Text Styles */
+.font-en { font-family: "Montserrat", serif; }
+.font-kor { font-family: 'Pretendard-Regular'; }
+.font-bold { font-weight: bold; color: #333!important;}
+.font-big-title { font-size: 70px;}
+.font-title { font-size: 50px; }
+.font-txt { font-size: 24px; color: #777; line-height: 34px; letter-spacing: -1px; }
+.font-light { font-weight: lighter;}
+
+/* section */
+.section { background-color: #fff !important;}
+.section-inner-wrap { width: 85%; height: 78%; margin: 0 auto;}
+.sec-left { width: 480px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;}
+.sec-left div:last-child img { text-align: center;}
+.sec-left .txt-box { width: 100%;}
+.sec-left .txt-box > p { margin-bottom: 10px;}
+.sec-left .txt-box div p { margin-bottom: 30px;}
+.sec-left .txt-box div p:last-child {margin-bottom: 0;}
+.sec-left .img-box { text-align: center;}
+.page-anime { opacity: 0; transition: all .1s ease;}
+.page-anime.on { opacity: 1;}
+
+/* Humans */
+.cover .human { width: 25%; }
+.page-01 .human { width: 14%; }
+.page-02 .human { width: 65%; }
+.page-03 .human { width: 100%; }
+.page-04 .human { width: 75%; }
+.page-05 .human { width: 16%; }
+.page-06 .human { width: 15% !important; }
+.page-07 .human { width: 10%; }
+
+
+/* cover */
+.port-cover {background: url(../images/bg-cover.svg) center/cover no-repeat;}
+.port-cover .section-inner-wrap { display: flex;}
+.port-cover .section-inner-wrap > div { width: 100%; margin-bottom: 5%;}
+.cover ul { width: 100%; height: 100%; margin-top: -5%; }
+
+/* Page 01 */
+.page-01 {background: url(../images/bg-01.svg) center/cover no-repeat;}
+.page-01 .section-inner-wrap { position: relative;}
+.page-01 .section-inner-wrap > div, .page-01 .section-inner-wrap > img { position: absolute;}
+.page-01 .section-inner-wrap > div:first-child { left: 0; top: 0;}
+.page-01 .section-inner-wrap > img{ right: 0; bottom: 0;}
+.page-01 .section-inner-wrap > div > ul > li { margin-bottom: 50px;}
+.page-01 .section-inner-wrap > div > ul > li > a { display: flex; }
+.page-01 .section-inner-wrap > div > ul > li > a > div:first-child { width: 95px; margin-right: 60px; transition: all .3s ease;}
+.page-01 .section-inner-wrap > div > ul > li > a > div:last-child { line-height: 30px;}
+.page-01 .section-inner-wrap > div, .page-01 .section-inner-wrap > div > ul { height: 100%;}
+.page-01 .section-inner-wrap .content-list li a div:first-child { font-weight: bold; color: #333;}
+.page-01 .section-inner-wrap .content-list li a.on div:first-child { color: tomato;}
+
+/* Page 02 */
+.page-02 { background: url(../images/bg-02.svg) center/cover no-repeat;}
+.page-02-info, .page-02-info .profile .pro-left { height: 100%; }
+.page-02-info .profile { width: 900px; height: 615px; display: flex; justify-content: space-between;}
+.page-02-info .profile .pro-left { width: 260px;}
+.page-02-info .profile .pro-right { width: 490px;}
+.page-02-info .skills { text-align: right;} 
+.page-02-info .profile .pro-right .skill-bars p { position: relative;}
+.page-02-info .profile .pro-right .skill-bars p:nth-child(2)::after,
+.page-02-info .profile .pro-right .skill-bars p:nth-child(3)::after,
+.page-02-info .profile .pro-right .skill-bars p:nth-child(4)::after,
+.page-02-info .profile .pro-right .skill-bars p:nth-child(5)::after,
+.page-02-info .profile .pro-right .skill-bars p:nth-child(6)::after,
+.page-02-info .profile .pro-right .skill-bars p:nth-child(7)::after,
+.page-02-info .profile .pro-right .skill-bars p:nth-child(8)::after,
+.page-02-info .profile .pro-right .skill-bars p:last-child::after { 
+  content: ''; position: absolute; height: 8px; background: #777; top: 50%; transform: translateY(-50%); left: 200px; 
+}
+.page-02-info .profile .pro-right .skill-bars p:nth-child(2)::after { width: 200px; }
+.page-02-info .profile .pro-right .skill-bars p:nth-child(3)::after { width: 200px; }
+.page-02-info .profile .pro-right .skill-bars p:nth-child(4)::after { width: 138px; }
+.page-02-info .profile .pro-right .skill-bars p:nth-child(5)::after { width: 102px; }
+.page-02-info .profile .pro-right .skill-bars p:nth-child(6)::after { width: 200px; }
+.page-02-info .profile .pro-right .skill-bars p:nth-child(7)::after { width: 200px; }
+.page-02-info .profile .pro-right .skill-bars p:nth-child(8)::after { width: 118px; }
+.page-02-info .profile .pro-right .skill-bars p:last-child::after { width: 118px; }
+
+/* Page 03 */
+.page-03 { background: url(../images/bg-03.svg) center/cover no-repeat;}
+.page-03 .img-box { width: 20%;}
+.page-03 .section-inner-wrap { position: relative;}
+.page-03 .section-inner-wrap .sec-left { width: 100%; height: 40%; flex-direction: row; }
+.page-03 .section-inner-wrap .sec-left .txt-box { width: 935px; }
+
+/* Page 03 Slides */
+.slider-container { width: 100%; height: 100%; overflow: hidden; position: absolute; top: 30%; left: 0; }
+.port-img-slides { display: flex; gap: 20px; width: max-content; animation: scrollLeft 30s linear infinite; }
+/* .port-img-slides:hover { animation:  none;} */
+.port-img-slides div { width: 250px; border: 1px solid #cbcbcb; transition: all .3s ease; flex-shrink: 0; margin-top: 70px; }
+.port-img-slides div img { width: 100%;}
+/* .port-img-slides div.on { width: 350px;  margin-top: 0px; } */
+
+@keyframes scrollLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Page 04 */
+.page-04 { background: url(../images/bg-04.svg) center/cover no-repeat;}
+.page-04 .sec-right { width: 60%; align-items: flex-start;}
+.page-04 .sec-right div { width: 270px;}
+.page-04 .sec-right div img:first-child { margin-bottom: 40px; width: 100%;}
+.page-04 .sec-right div:first-child { align-items: center;}
+.page-04 .miniminder-icon { width: 30%; margin-bottom: 5%;}
+
+/* Page 05 */
+.page-05 { background: url(../images/bg-05.svg) center/cover no-repeat;}
+.page-05 .section-inner-wrap { position: relative;}
+.page-05 .section-inner-wrap > img { position: absolute; top: 12%; right: 90px;}
+.page-05 .section-inner-wrap .txt-box { width: 100%; text-align: center; margin: 0 auto; }
+.page-05 .section-inner-wrap .txt-box > p:nth-child(2) { margin: 10px 0 10px;}
+.page-05 .sec-top { width: 45%; position: absolute; top: 0; left: 50%; transform: translateX(-50%);}
+.page-05 .sec-bottom { width: 100%; position: absolute; top: 35%; z-index: 2;}
+.page-05 .sec-bottom > a { display: inline-block; width: 486px; }
+.page-05 .img-computers { width: 100%; margin-bottom: 10%;}
+.page-05 .section-inner-wrap .sec-bottom a img { transition: all .3s ease;}
+.page-05 .section-inner-wrap .sec-bottom a:hover img { transform: scale(1.1); }
+
+/* Page 06 */
+.page-06 .section-inner-wrap > img { left:40px;}
+.page-06 .sec-bottom > a { position: relative;}
+.page-06 .sec-bottom > a > img:first-child { position: absolute; top: 45%; right: -15%;}
+.page-06 .section-inner-wrap .sec-bottom a img:first-child { width: 65%; transition: all .3s ease;}
+.page-06 .section-inner-wrap .sec-bottom a:hover img:first-child { transform: scale(1.2); }
+.page-06 .section-inner-wrap .sec-bottom a:hover img { transform: none;}
+
+/* Page 07 */
+.page-07 { background: url(../images/bg-07.svg) center/cover no-repeat;}
+.page-07 .section-inner-wrap { align-items: center;}
+.page-07 .txt-top, .page-07 .txt-bottom {text-align: center;}
+.page-07 .txt-top > p:nth-child(2) { margin: 10px 0 10px;}
+.page-07 .back-home { width: 3%; height: 3%; display: block;}
+.page-07 .back-home a, .page-07 .back-home img { width: 100%; display: inline-block;}
+
+
+@media screen and (min-width: 2560px) {
+  .section-inner-wrap { width: 75%;}
+  .page-02 .human, .page-04 .human { margin-bottom: 20%;}
+}
