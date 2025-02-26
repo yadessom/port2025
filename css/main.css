@@ -38,7 +38,7 @@
 .page-anime { opacity: 0; transition: all .1s ease;}
 .page-anime.on { opacity: 1;}
 
-/* Humans */
+/* Humans */ 
 .cover .human { width: 25%; }
 .page-01 .human { width: 14%; }
 .page-02 .human { width: 65%; }
@@ -54,6 +54,7 @@
 .port-cover .section-inner-wrap { display: flex;}
 .port-cover .section-inner-wrap > div { width: 100%; margin-bottom: 5%;}
 .cover ul { width: 100%; height: 100%; margin-top: -5%; }
+.cover-title { width: 30%;}
 
 /* Page 01 */
 .page-01 {background: url(../images/bg-01.svg) center/cover no-repeat;}
@@ -73,7 +74,7 @@
 .page-02 { background: url(../images/bg-02.svg) center/cover no-repeat;}
 .page-02-info, .page-02-info .profile .pro-left { height: 100%; }
 .page-02-info .profile { width: 900px; height: 615px; display: flex; justify-content: space-between;}
-.page-02-info .profile .pro-left { width: 260px;}
+/* .page-02-info .profile .pro-left { width: 260px;} */
 .page-02-info .profile .pro-right { width: 490px;}
 .page-02-info .skills { text-align: right;} 
 .page-02-info .profile .pro-right .skill-bars p { position: relative;}
@@ -87,14 +88,16 @@
 .page-02-info .profile .pro-right .skill-bars p:last-child::after { 
   content: ''; position: absolute; height: 8px; background: #777; top: 50%; transform: translateY(-50%); left: 200px; 
 }
-.page-02-info .profile .pro-right .skill-bars p:nth-child(2)::after { width: 200px; }
-.page-02-info .profile .pro-right .skill-bars p:nth-child(3)::after { width: 200px; }
-.page-02-info .profile .pro-right .skill-bars p:nth-child(4)::after { width: 138px; }
-.page-02-info .profile .pro-right .skill-bars p:nth-child(5)::after { width: 102px; }
-.page-02-info .profile .pro-right .skill-bars p:nth-child(6)::after { width: 200px; }
-.page-02-info .profile .pro-right .skill-bars p:nth-child(7)::after { width: 200px; }
-.page-02-info .profile .pro-right .skill-bars p:nth-child(8)::after { width: 118px; }
-.page-02-info .profile .pro-right .skill-bars p:last-child::after { width: 118px; }
+.page-02-info .profile .pro-right .skill-bars { width: 100%;}
+.page-02-info .profile .pro-right .skill-bars p:nth-child(2)::after { width: 40%; }  
+.page-02-info .profile .pro-right .skill-bars p:nth-child(3)::after { width: 40%; }  
+.page-02-info .profile .pro-right .skill-bars p:nth-child(4)::after { width: 28%; }  
+.page-02-info .profile .pro-right .skill-bars p:nth-child(5)::after { width: 20%; }  
+.page-02-info .profile .pro-right .skill-bars p:nth-child(6)::after { width: 40%; }  
+.page-02-info .profile .pro-right .skill-bars p:nth-child(7)::after { width: 40%; }  
+.page-02-info .profile .pro-right .skill-bars p:nth-child(8)::after { width: 24%; }  
+.page-02-info .profile .pro-right .skill-bars p:last-child::after { width: 24%; }  
+
 
 /* Page 03 */
 .page-03 { background: url(../images/bg-03.svg) center/cover no-repeat;}
@@ -152,9 +155,3 @@
 .page-07 .txt-top > p:nth-child(2) { margin: 10px 0 10px;}
 .page-07 .back-home { width: 3%; height: 3%; display: block;}
 .page-07 .back-home a, .page-07 .back-home img { width: 100%; display: inline-block;}
-
-
-@media screen and (min-width: 2560px) {
-  .section-inner-wrap { width: 75%;}
-  .page-02 .human, .page-04 .human { margin-bottom: 20%;}
-}
