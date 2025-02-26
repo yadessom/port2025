@@ -1,0 +1,59 @@
+@media screen and (min-width: 2560px) {
+    .section-inner-wrap { width: 75%;}
+    .page-02 .human, .page-04 .human { margin-bottom: 20%;}
+
+}
+
+
+@media (max-width: 1600px) {
+
+    /* Section Style */
+    .sec-left { width: 350px;}
+    .sec-left .txt-box { width: 100%;}
+    .sec-left .txt-box div p { margin-bottom: 20px;}
+
+    /* Text Styles */
+    .font-big-title { font-size: 50px;}
+    .font-title { font-size: 35px; }
+    .font-txt { font-size: 18px; color: #777; line-height: 26px; letter-spacing: -1px; }
+    .font-light { font-weight: lighter;}
+
+    /* Page 01 */
+    .page-01 .section-inner-wrap > div > ul > li { margin-bottom: 30px;}
+    .page-01 .section-inner-wrap > div > ul > li > a > div:last-child { line-height: 22px;}
+    .page-01 .section-inner-wrap > div > ul > li > a > div:first-child { width: 14%;}
+
+
+    /* Page 02 */
+    .page-02 .skills img { width: 350px;}
+    .page-02 .mypic img { width: 190px;}
+    .page-02-info .profile { width: 630px; height: 420px;}
+    .page-02-info .profile .pro-right { width: 345px;}
+    .page-02-info .profile .pro-right .skill-bars p:nth-child(2)::after,
+    .page-02-info .profile .pro-right .skill-bars p:nth-child(3)::after,
+    .page-02-info .profile .pro-right .skill-bars p:nth-child(4)::after,
+    .page-02-info .profile .pro-right .skill-bars p:nth-child(5)::after,
+    .page-02-info .profile .pro-right .skill-bars p:nth-child(6)::after,
+    .page-02-info .profile .pro-right .skill-bars p:nth-child(7)::after,
+    .page-02-info .profile .pro-right .skill-bars p:nth-child(8)::after,
+    .page-02-info .profile .pro-right .skill-bars p:last-child::after { left: 130px;}
+    .page-02 .human { width: 55%;}
+
+    /* Page 03 */
+    .page-03 .section-inner-wrap .sec-left .txt-box { width: 810px;}
+    .port-img-slides div { width: 160px;}
+    .port-img-slides { gap: 10px;}
+
+    /* Page 04 */
+    .page-04 .sec-right div { width: 180px;}
+
+    /* Page 05 */
+    .page-05
+
+    /* Page 06 */
+    .page-06
+
+    /* Page 07 */
+    .page-07
+
+}
