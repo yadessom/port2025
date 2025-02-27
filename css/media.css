@@ -48,7 +48,9 @@
     .page-04 .sec-right div { width: 180px;}
 
     /* Page 05 */
-    .page-05
+    .page-05 .sec-top { width: 50%;}
+    .page-05 .sec-bottom > a { width: 320px;}
+    .page-05 .section-inner-wrap > img { right: 80px;}
 
     /* Page 06 */
     .page-06
