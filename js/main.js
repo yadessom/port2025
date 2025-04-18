@@ -30,29 +30,35 @@ $(function(){
 				$('.page02-anime-skills').removeClass('animate__fadeInUp on');
 			}
 			if(index == 5){
+				$('.page-03-01 .sec-right').addClass('animate__fadeIn on');
+			}else{
+				$('.page-03-01 .sec-right').removeClass('animate__fadeIn on');
+			}
+			if(index == 6){
 				$('.page-04 .sec-right').addClass('animate__fadeInRight on');
 			}else{
 				$('.page-04 .sec-right').removeClass('animate__fadeInRight on');
 			}
-			if(index == 6){
+			if(index == 7){
 				$('.page-05 .sec-bottom').addClass('animate__fadeInUp on');
 			}else{
 				$('.page-05 .sec-bottom').removeClass('animate__fadeInUp on');
 			}
-			if(index == 7){
+			if(index == 8){
 				$('.page-06 .sec-bottom').addClass('animate__fadeInUp on');
 			}else{
 				$('.page-06 .sec-bottom').removeClass('animate__fadeInUp on');
 			}
-			if(index == 8){
+			if(index == 9){
 				$('.page-07 .back-home').addClass('animate__heartBeat on');
 			}else{
 				$('.page-07 .back-home').removeClass('animate__heartBeat on');
 			}
 		}
 	});
-
-	$('.slider-container .port-img-slides div').hover(
+	
+	// page-03
+	$('.slider-container .port-img-slides a').hover(
         function() {
             $(this).addClass('on');
         }, 
