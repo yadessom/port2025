@@ -2,7 +2,7 @@ $(function(){
 
     $('#fullpage').fullpage({
 		//options here
-		anchors: ['cover','contents','profile','product','uiux','web','shop','contact'],
+		anchors: ['cover','contents','profile','product','productdetail','uiux','web','shop','contact'],
 		autoScrolling:true,
 		scrollHorizontally: true,
 		navigation:true,
