@@ -87,6 +87,7 @@
 .page-02-info .profile .pro-right .skill-bars p:nth-child(8)::after,
 .page-02-info .profile .pro-right .skill-bars p:last-child::after { 
   content: ''; position: absolute; height: 8px; background: #777; top: 50%; transform: translateY(-50%); left: 200px; 
+  display: none;
 }
 .page-02-info .profile .pro-right .skill-bars { width: 100%;}
 .page-02-info .profile .pro-right .skill-bars p:nth-child(2)::after { width: 40%; }  
@@ -108,16 +109,39 @@
 
 /* Page 03 Slides */
 .slider-container { width: 100%; height: 100%; overflow: hidden; position: absolute; top: 30%; left: 0; }
-.port-img-slides { display: flex; gap: 20px; width: max-content; animation: scrollLeft 30s linear infinite; }
+/*.port-img-slides div { width: 250px; border: 1px solid #cbcbcb; transition: all .3s ease; flex-shrink: 0; margin-top: 70px; }
+.port-img-slides div img { width: 100%;} 
+.port-img-slides div.on { width: 350px;  margin-top: 0px; } */
 /* .port-img-slides:hover { animation:  none;} */
-.port-img-slides div { width: 250px; border: 1px solid #cbcbcb; transition: all .3s ease; flex-shrink: 0; margin-top: 70px; }
-.port-img-slides div img { width: 100%;}
-/* .port-img-slides div.on { width: 350px;  margin-top: 0px; } */
+.port-img-slides { display: flex; gap: 20px; width: max-content; animation: scrollLeft 25s linear infinite; }
+.port-img-slides a.on { width: 350px;  margin-top: 0px; }
+.port-img-slides a { width: 250px; border: 1px solid #cbcbcb; transition: all .3s ease; flex-shrink: 0; margin-top: 70px; }
+.port-img-slides a img { width: 100%;}
 
 @keyframes scrollLeft {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
+
+/* Page 03-1 */
+.page-03-01 { overflow: hidden; position: relative;}
+.page-03-01 .sec-right {position: absolute; top: 0; right: 0;width: 50%;}
+.page-03-01 .sec-right .details { width: 43%; float: left; border: 1px solid #cbcbcb; box-sizing: border-box;}
+.page-03-01 .sec-right .details img { width: 100%; margin-top: -1px; }
+.page-03-01 .sec-right .comma { margin-right: 5%; margin-top: 100%;}
+.page-03-01 .sec-right .tooo { margin-top: 100%;}
+
+.page-03-01 .sec-right .comma { animation: scrollUp 30s linear infinite; }
+@keyframes scrollUp { 
+  from { transform: translateY(0); } 
+  to { transform: translateY(-100%); } }
+
+.page-03-01 .sec-right .tooo { animation: scrollDown 50s linear infinite; }
+@keyframes scrollDown { 
+  from { transform: translateY(0); } 
+  to { transform: translateY(-100%); } }  
+
+
 
 /* Page 04 */
 .page-04 { background: url(../images/bg-04.svg) center/cover no-repeat;}
